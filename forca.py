@@ -16,6 +16,7 @@ acertou = False
 contador = 0
 
 while acertou == False:
+    print('')
     letra_escrita = str(input('Digite uma letra\n')).strip().upper()
 
     if len(letra_escrita) >= 2 or len(letra_escrita) <= 0:
@@ -33,7 +34,7 @@ while acertou == False:
             if letras_descobertas[x] == '_':
                 acertou = False
 
-        print(letras_descobertas)  # catchau
+        print(letras_descobertas)
 
         if contador == 7:
             print("""
@@ -60,4 +61,5 @@ while acertou == False:
             break
 
         if acertou:
-            print('VOCÊ GANHOU!!!!!!')
+            print('')
+            print('\033[0;34mVOCÊ GANHOU!!!!!!')
